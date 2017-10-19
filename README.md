@@ -127,4 +127,4 @@ docker-compose -f docker-compose-production.yml run --rm api python manage.py co
 docker-compose -f docker-compose-production.yml up -d
 ```
 
-* Visit [138.197.72.19](138.197.72.19)
+* Visit [138.197.72.19](http://138.197.72.19)
