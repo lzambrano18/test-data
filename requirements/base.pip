@@ -1,0 +1,7 @@
+django==1.11.4
+django-environ==0.4.4
+django-filter==1.0.4
+django-rest-swagger==2.1.2
+djangorestframework==3.7.1
+pillow==4.2.1
+psycopg2==2.7.3.1

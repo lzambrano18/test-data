@@ -1,0 +1,6 @@
+{
+  "data/tests.py::test_investment_list": true,
+  "data/tests.py::test_programs_list": true,
+  "data/tests.py::test_sectors_list": true,
+  "data/tests.py::test_years_list": true
+}
