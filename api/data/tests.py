@@ -58,7 +58,7 @@ def test_years_list(client, url_year):
     # Create N objects
     request = client.get(path=url_year, format='json')
 
-    assert request.status_code == status.HTTP_200_OK, 'Fails to list tags'
+    assert request.status_code == status.HTTP_200_OK, 'Fails to list years'
     assert len(request.data) == models.Year.objects.count(), 'Incorrect number objects in data'
 
 
@@ -70,7 +70,7 @@ def test_sectors_list(client, url_sector):
     # Create N objects
     request = client.get(path=url_sector, format='json')
 
-    assert request.status_code == status.HTTP_200_OK, 'Fails to list tags'
+    assert request.status_code == status.HTTP_200_OK, 'Fails to list sectors'
     assert len(request.data) == models.Sector.objects.count(), 'Incorrect number objects in data'
 
 
@@ -82,7 +82,7 @@ def test_programs_list(client, url_program):
     # Create N objects
     request = client.get(path=url_program, format='json')
 
-    assert request.status_code == status.HTTP_200_OK, 'Fails to list tags'
+    assert request.status_code == status.HTTP_200_OK, 'Fails to list programs'
     assert len(request.data) == models.Program.objects.count(), 'Incorrect number objects in data'
 
 
@@ -94,5 +94,5 @@ def test_investment_list(client, url_investment):
     # Create N objects
     request = client.get(path=url_investment, format='json')
 
-    assert request.status_code == status.HTTP_200_OK, 'Fails to list tags'
+    assert request.status_code == status.HTTP_200_OK, 'Fails to list investment'
     assert len(request.data) == models.Investment.objects.count(), 'Incorrect number objects in data'
